@@ -25,7 +25,7 @@ api = Api(app)
 api.register_blueprint(EmployeeBluePrint)
 api.register_blueprint(DepartmentBluePrint)
 
-# flask API routes
+# flask API routes end points to access
 @app.route('/projects')
 def get_projects_wrapper():
     return get_projects()
